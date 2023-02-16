@@ -10,13 +10,13 @@ int * doBadThings() {
 }
 
 int main() {
-	int * intPtr = new int[10];
+	int * intPtr = new int;
 	*intPtr = 7;
 	cout << *intPtr << endl;
 	
 	// done with what intPtr points to...
 	// forget to free it!!
-	delete [] intPtr;
+	// delete intPtr;
 	intPtr = NULL;
 	
 	int * badPtr = NULL;
